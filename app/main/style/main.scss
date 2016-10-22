@@ -1,0 +1,15 @@
+// Shared Values
+$secondary-color: red;
+$default-color: #CCC;
+$default-font: verdana;
+
+// Function Styles
+@mixin paragraph($font, $color) {
+    font-family: $font;
+    color: $color;
+}
+
+// Definitions
+h1 {
+    @include paragraph($default-font, $secondary-color);
+}
